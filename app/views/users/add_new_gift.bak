@@ -1,0 +1,1 @@
+page.replace_html “giftlist_” + @giftlist.id.to_s, :partial =>’show_giftlist’

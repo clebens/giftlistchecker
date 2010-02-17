@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  tshirt_size: MyString
+  waist: 1
+  inseam: 1
+  shoe_size: 1
+  hat_size: 1
+  dress_shirt_size: MyString
+  bust_size: MyString
+  dress_size: 1
+  hip_size: 1
+
+two:
+  user_id: 1
+  tshirt_size: MyString
+  waist: 1
+  inseam: 1
+  shoe_size: 1
+  hat_size: 1
+  dress_shirt_size: MyString
+  bust_size: MyString
+  dress_size: 1
+  hip_size: 1

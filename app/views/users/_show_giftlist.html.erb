@@ -1,0 +1,56 @@
+
+<div id="giftlist_<%= @giftlist.id %>">
+<br />
+<giftlist_heading>
+	<%= @giftlist.giftlist_name %> - <a href="/<%= @user.username %>/<%= @giftlist.giftlist_name %>/rss.xml"><font style="font-size: 10pt;">RSS Feed of List</font></a> 
+</giftlist_heading>
+<br />
+<table class="product-table">
+<% for gift in @gifts %>
+	<% if gift.giftlist_id == @giftlist.id %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+	<td class="product_column_left">
+		<product_name>
+		<a href="<%= gift.url %>">
+				<%= gift.name %> 
+					<span ="gift_purchased_warning_<%= gift.id %>">
+						<% if gift.num_purchased >= gift.num_requested %><font style="text-color: red;"> - FULLY PURCHASED </font><% end %>
+					</span>
+		</a>
+		</product_name>
+		<br />Price: <%=h number_to_currency(gift.price) %>
+		<br />
+		Number Purchased: <span id="num_purchased_<%= gift.id %>"><%= gift.num_purchased %></span> / <%= gift.num_requested %>
+		<br />
+		Description: <%= gift.description %>
+	</td>
+	<% if session[:user] %>
+		<td>
+			<% purchased_gift_loc = "num_purchased_", gift.id %>
+			<%= link_to_remote "Purchased Gift",
+					:url => { :action => 'purchased_gift', :gift  => gift.id },
+					:update => purchased_gift_loc %>
+		</td>
+	<% end %>
+		<% if session[:user] == @user.username %>
+				<td class="product_column_right">
+					<center>
+						<%= link_to_remote "[ x ]", 
+										:url => { :action => "delete_gift", :giftlist => @giftlist.id, :gift_id => gift.id, :id => @user.id },
+											:update => "giftlist_" + @giftlist.id.to_s %>
+					</center><br>
+				</td>	
+		<% end %>
+	</tr>
+	<% end %>	
+<% end %>
+<% if session[:user] == @user.username %>
+	<tr><td><span id="add_gift_dialog_<%= @giftlist.id %>">
+		<%= link_to_remote "Add Gift",
+												:url => { :action => 'add_gift_dialog', :giftlist_id => @giftlist.id },
+												:update => 'add_gift_dialog_' + @giftlist.id.to_s %>
+	</span></td></tr>
+<% end %>
+</table>
+</div>
+

@@ -1,0 +1,38 @@
+<p>
+  <b>User:</b>
+  <%=h @gift.user_id %>
+</p>
+
+<p>
+  <b>Giftlist:</b>
+  <%=h @gift.giftlist_id %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @gift.price %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @gift.url %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @gift.description %>
+</p>
+
+<p>
+  <b>Num purchased:</b>
+  <%=h @gift.num_purchased %>
+</p>
+
+<p>
+  <b>Num requested:</b>
+  <%=h @gift.num_requested %>
+</p>
+
+
+<%= link_to 'Edit', edit_gift_path(@gift) %> |
+<%= link_to 'Back', gifts_path %>

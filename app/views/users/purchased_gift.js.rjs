@@ -1,0 +1,1 @@
+page.replace_html "gift_purchased_warning_<%= gift.id %>", :inline => "<% if gift.num_purchased >= gift.num_requested %><font style="text-color: red;"> - FULLY PURCHASED </font><% end %>"

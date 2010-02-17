@@ -1,0 +1,38 @@
+<div class="gift-listing">
+
+<gift_title>
+  <b>Gift for:</b>
+  <%=h @user.username %>
+</gift_title>
+<br />
+<gift_listing>
+  <b>Price:</b>
+  <%=h number_to_currency(@gift.price) %>
+</gift_listing>
+<br />
+
+<gift_listing>
+  <b>Url:</b>
+  <a href="<%=h @gift.url %>"><%=h @gift.url %></a>
+</gift_listing>
+<br />
+
+<gift_listing>
+  <b>Description:</b>
+  <%=h @gift.description %>
+</gift_listing>
+<br />
+
+<gift_listing>
+  <b>Num purchased:</b>
+  <%=h @gift.num_purchased %>
+</gift_listing>
+<br />
+
+<gift_listing>
+  <b>Num requested:</b>
+  <%=h @gift.num_requested %>
+</gift_listing>
+<br />
+</div>
+

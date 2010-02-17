@@ -1,0 +1,11 @@
+<%= form_remote_tag :url => { :action => "add_giftlist" }, :update => "all_user_giftlists"%>
+giftlist&nbsp;name&nbsp;<input type='text' name='input_name'>&nbsp;&nbsp;
+hidden<input type='checkbox' name='input_hidden'>
+<input type="hidden" name="input_user_id" value="<%= @user.id %>">
+<input type="hidden" name="input_user_name" value="<%= @user.username %>">
+<input style="text-align: right" type='submit' value='submit'>
+</form>
+<br />
+<%= link_to_remote "cancel",
+										:url => { :action => 'cancel_new_giftlist' },
+										:update => 'add_giftlist_dialog' %>

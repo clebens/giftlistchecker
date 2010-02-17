@@ -1,0 +1,78 @@
+<div class="user_admin">
+<h1>User Settings</h1>
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation %><br />
+    <%= f.text_field :password_confirmation %>
+  </p>
+  <p>
+    <%= f.label :email_addr %><br />
+    <%= f.text_field :email_addr %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+</div>
+
+<div class="measurement_admin">
+<h1>Measurements</h1>
+
+<% form_for(@measurement) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <p><b>User</b> - <%=h session[:user] -%></p>
+  </p>
+  <p>
+    <%= f.label :tshirt_size %><br />
+    <%= f.text_field :tshirt_size %>
+  </p>
+  <p>
+    <%= f.label :waist %><br />
+    <%= f.text_field :waist %>
+  </p>
+  <p>
+    <%= f.label :inseam %><br />
+    <%= f.text_field :inseam %>
+  </p>
+  <p>
+    <%= f.label :shoe_size %><br />
+    <%= f.text_field :shoe_size %>
+  </p>
+  <p>
+    <%= f.label :hat_size %><br />
+    <%= f.text_field :hat_size %>
+  </p>
+  <p>
+    <%= f.label :dress_shirt_size %><br />
+    <%= f.text_field :dress_shirt_size %>
+  </p>
+  <p>
+    <%= f.label :bust_size %><br />
+    <%= f.text_field :bust_size %>
+  </p>
+  <p>
+    <%= f.label :dress_size %><br />
+    <%= f.text_field :dress_size %>
+  </p>
+  <p>
+    <%= f.label :hip_size %><br />
+    <%= f.text_field :hip_size %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+</div>

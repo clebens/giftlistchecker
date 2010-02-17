@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Users: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold', 'gifter' %>
+	<%= javascript_include_tag :defaults %>
+</head>
+<body>
+
+<p style="color: green"></p>
+
+<table>
+	<tr class="columns-top">
+		<td class="banner">
+			<heading>giftlistchecker.com</heading>
+		</td>
+	
+		<td class="login_corner">
+			<% if session[:user] %>
+				Welcome, <%= session[:user] %><br />
+				<a href="/logout">Logout</a>
+			<% else %>
+				<%= form_tag :action => 'login' %>	
+				<table>
+						<%= form_tag :action => 'login' %>	
+						<tr>
+							<td><label for="name">Username:</label></td>
+							<td><%= text_field_tag :name, params[:name] %></td>
+						</tr>						
+						<tr>
+							<td><label for="password">Password:</label></td>
+							<td><%= password_field_tag :password, params[:password] %></td>
+						</tr>
+						<tr><td></td><td><%= submit_tag "Login" %></td></tr>
+						</form>
+						<%= form_tag :action => 'add_user' %><tr><td></td><td><%= submit_tag "Add User" %></tr></tr></form>
+						
+				</table>
+				
+			<% end %>
+		</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+
+<td class="left_border"></td>
+
+<td class="main_window">
+
+<table>
+
+
+	<tr id="columns-mid">	
+		<td class="main">
+			<% if flash[:notice] %>
+				<div id="notice"><%= flash[:notice] %></div>
+			<% end -%>
+			<div id="main_display"><%= yield %></div>
+
+		</td>
+		<td class="sidebar">
+			<%= form_tag :action => 'search_users' %>
+					<label for="name">Search Users:</label>
+					<%= text_field_tag :search, params[:search] %>
+					<%= submit_tag "Search" %> <br /><br />
+		
+			<% if session[:user] %>
+				<%= link_to_remote "Add Gift",
+														:url => { :action => 'add_gift' },
+														:update => 'main_display' %> <br />
+				<a href="/<%= session[:user] %>/">My Gifts</a><br />
+				<a href="/<%= session[:user] %>/manage_giftlists">Manage Giftlists</a><br />	
+			<% end %>
+				<a href="/">Recommend a Gift</a><br />
+				<a href="/">Find a Friend</a><br /><br />
+
+				<measurements_heading>Measurements</measurements_heading>
+		</td>
+	</tr>
+	<tr >
+		<td class="footer" colspan=2>
+	farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts 
+	farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts 
+	farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts 
+	farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts 
+	farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts 
+	farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts farts 
+		</td>
+	</tr>
+</table>
+</td>
+<td class="right_border"></td>
+</tr>
+</table>
+</body>
+</html>

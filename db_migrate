@@ -1,0 +1,543 @@
+Script started on Fri 09 Oct 2009 02:34:52 PM PDT
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ mysql -u clebens -p[8Pnpp show_g*mysql -u clebens -p[Kscript [K/mig[K[K[K[K[K[K[K[K[K[Krake db:migrate
+(in /home/clebens/www/gifter)
+==  AddGiftNameColumn: migrating ==============================================
+-- add_column(:gifts, :name, :string)
+   -> 0.0134s
+==  AddGiftNameColumn: migrated (0.0136s) =====================================
+
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd app/views
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd gifts
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ l
+sbash: l: command not found
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ s[Kls
+[00m[00medit.html.erb[00m  [00mindex.html.erb[00m  [00mnew.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ npp index.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ npp index.html.erb[1P.html.erb[1P.html.erb[1P.html.erb[1P.html.erb[1P.html.erbe.html.erbd.html.erbi.html.erbt.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ ls
+[00m[00medit.html.erb[00m  [00mindex.html.erb[00m  [00mnew.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd [K[K[Kcd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd config
+]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ ls
+[00m[00mboot.rb[00m       [00menvironment.rb[00m  [01;34minitializers[00m/  [00mroutes.rb[00m
+[00mdatabase.yml[00m  [01;34menvironments[00m/   [01;34mlocales[00m/
+[m]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ npp routes.rb
+]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd app
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd controL[K*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mgifts_controller.rb[00m
+[00mgiftlists_controller.rb[00m    [00musers_controller.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ npp users*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ cd l[K..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd views
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users;[K
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00medit.html.erb[00m  [00mindex.html.erb[00m  [00mnew.html.erb[00m  [00mshow_gifts.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp admin.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp admin.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ../../
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ lsc[K
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd vid[Kews
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd layouts
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ ls
+[00m[00mgiftlists.html.erb[00m  [00mgifts.html.erb[00m  [00musers.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ npp users.h[K[K[K[K[K[K[Kgifts.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ npp gifts.html.erb[Knpp users.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ l[Kkls[K[K[Kls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mindex.html.erb[00m  [00mshow_gifts.html.erb[00m
+[00medit.html.erb[00m   [00mnew.html.erb[00m    [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ c[Knpp show_gifts.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd layouts
+bash: cd: layouts: No such file or directory
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd views/lay*
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ ls
+[00m[00mgiftlists.html.erb[00m  [00mgifts.html.erb[00m  [00musers.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ npp users*
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ cd ../..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd cont*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mgifts_controller.rb[00m
+[00mgiftlists_controller.rb[00m    [00musers_controller.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ npp gifts.c[K[K_cong*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ npp gifts_cong*[1P*t*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ npp gifts_cont*[1P_cont*[1P_cont*[1P_cont*[1P_cont*[1P_cont*u_cont*s_cont*e_cont*r_cont*s_cont*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd config
+]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ ls
+[00m[00mboot.rb[00m       [00menvironment.rb[00m  [01;34minitializers[00m/  [00mroutes.rb[00m
+[00mdatabase.yml[00m  [01;34menvironments[00m/   [01;34mlocales[00m/
+[m]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ c[Knpp routes.rb
+]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ ls
+[00m[01;34mapp[00m/     [01;34mdb[00m/         [01;34mdoc[00m/  [01;34mlog[00m/     [00mRakefile[00m  [01;34mscript[00m/  [01;34mtmp[00m/
+[01;34mconfig[00m/  [00mdb:migrate[00m  [01;34mlib[00m/  [01;34mpublic[00m/  [00mREADME[00m    [01;34mtest[00m/    [01;34mvendor[00m/
+[m]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd [K[K[Kls
+[00m[01;34mapp[00m/     [01;34mdb[00m/         [01;34mdoc[00m/  [01;34mlog[00m/     [00mRakefile[00m  [01;34mscript[00m/  [01;34mtmp[00m/
+[01;34mconfig[00m/  [00mdb:migrate[00m  [01;34mlib[00m/  [01;34mpublic[00m/  [00mREADME[00m    [01;34mtest[00m/    [01;34mvendor[00m/
+[m]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd sc[K[Kapp
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd views
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd gifts
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ ls
+[00m[00medit.html.erb[00m  [00mindex.html.erb[00m  [00mnew.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ npp show*
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ cd l..[K[K[K../users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mindex.html.erb[00m  [00mshow_gifts.html.erb[00m
+[00medit.html.erb[00m   [00mnew.html.erb[00m    [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp show_gift.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mindex.html.erb[00m  [00mshow_gift.html.erb[00m   [00mshow.html.erb[00m
+[00medit.html.erb[00m   [00mnew.html.erb[00m    [00mshow_gifts.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mindex.html.erb[00m  [00mshow_gift.html.erb[00m   [00mshow.html.erb[00m
+[00medit.html.erb[00m   [00mnew.html.erb[00m    [00mshow_gifts.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd[Kd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd cd[K[K..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ l[Kcd con*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mgifts_controller.rb[00m
+[00mgiftlists_controller.rb[00m    [00musers_controller.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ npp users.[K_*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd models
+]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ ls
+[00m[00mgiftlist.rb[00m  [00mgift.rb[00m  [00muser.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ npp user.rb
+]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd db
+]0;clebens@localhost: ~/www/gifter/dbclebens@localhost:~/www/gifter/db$ ls
+[00m[01;34mmigrate[00m/  [00mschema.rb[00m  [00mseeds.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/dbclebens@localhost:~/www/gifter/db$ cd migrate
+]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ ls
+[00m[00m20091008010444_create_users.rb[00m      [00m20091008010625_create_gifts.rb[00m
+[00m20091008010534_create_giftlists.rb[00m  [00m20091009213246_add_gift_name_column.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ npp create[K[K[K[K[K[KI*[K[KI[K*users.rb
+]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ cd ..
+]0;clebens@localhost: ~/www/gifter/dbclebens@localhost:~/www/gifter/db$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ script/generate migration add_salt_to_user
+      exists  db/migrate
+      create  db/migrate/20091012185240_add_salt_to_user.rb
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd db/migrate
+]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ ls
+[00m[00m20091008010444_create_users.rb[00m      [00m20091009213246_add_gift_name_column.rb[00m
+[00m20091008010534_create_giftlists.rb[00m  [00m20091012185240_add_salt_to_user.rb[00m
+[00m20091008010625_create_gifts.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ npp *salt_to*
+]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ ls
+[00m[00m20091008010444_create_users.rb[00m      [00m20091009213246_add_gift_name_column.rb[00m
+[00m20091008010534_create_giftlists.rb[00m  [00m20091012185240_add_salt_to_user.rb[00m
+[00m20091008010625_create_gifts.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ npp (*[K[K*columj[Kn*
+]0;clebens@localhost: ~/www/gifter/db/migrateclebens@localhost:~/www/gifter/db/migrate$ cd ..
+]0;clebens@localhost: ~/www/gifter/dbclebens@localhost:~/www/gifter/db$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ ta[K[Krake db:migreat[K[K[Kate
+(in /home/clebens/www/gifter)
+==  AddSaltToUser: migrating ==================================================
+-- add_column(:users, :salt, :string)
+   -> 0.0076s
+==  AddSaltToUser: migrated (0.0077s) =========================================
+
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd app/vies
+bash: cd: app/vies: No such file or directory
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd app/viesws
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ l
+sbash: l: command not found
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ s[Kls
+[00m[00madmin.html.erb[00m  [00mindex.html.erb[00m  [00mshow_gift.html.erb[00m   [00mshow.html.erb[00m
+[00medit.html.erb[00m   [00mnew.html.erb[00m    [00mshow_gifts.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp idnex.[K[K[K[K[Kne[Kdex.*
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd cont*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mgifts_controller.rb[00m
+[00mgiftlists_controller.rb[00m    [00musers_controller.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ npp users*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mgifts_controller.rb[00m
+[00mgiftlists_controller.rb[00m    [00musers_controller.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ cd ..\
+> ;
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd views;
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mindex.html.erb[00m  [00mshow_gift.html.erb[00m   [00mshow.html.erb[00m
+[00medit.html.erb[00m   [00mnew.html.erb[00m    [00mshow_gifts.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp edit.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ../
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd models
+]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ ls
+[00m[00mgiftlist.rb[00m  [00mgift.rb[00m  [00muser.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ no[Kpp users.[K[K.rb
+]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd views
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mindex.html.erb[00m  [00mshow_gift.html.erb[00m   [00mshow.html.erb[00m
+[00medit.html.erb[00m   [00mnew.html.erb[00m    [00mshow_gifts.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp new.ht*
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd [K[K[Kmysql -u s[Kclebens -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1075
+Server version: 5.0.75-0ubuntu10.2 (Ubuntu)
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> sele[K[K[K[Kuise[K[K[Kse gifter;[K_developmne[K[Kent
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> select * from users;
++----+----------+------------------------------------------+------------------------+---------------------+---------------------+-----------------------------+
+| id | username | hashed_password                          | email_addr             | created_at          | updated_at          | salt                        |
++----+----------+------------------------------------------+------------------------+---------------------+---------------------+-----------------------------+
+|  3 | clebens  | db95e7919feda4b9e4c45f3522b3399c7001ce2c | colin.lebens@gmail.com | 2009-10-12 19:07:21 | 2009-10-12 19:07:21 | -6162846880.123770673809845 | 
++----+----------+------------------------------------------+------------------------+---------------------+---------------------+-----------------------------+
+1 row in set (0.01 sec)
+
+mysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> select * from users;
++----+----------+------------------------------------------+------------------------+---------------------+---------------------+-----------------------------+
+| id | username | hashed_password                          | email_addr             | created_at          | updated_at          | salt                        |
++----+----------+------------------------------------------+------------------------+---------------------+---------------------+-----------------------------+
+|  3 | clebens  | db95e7919feda4b9e4c45f3522b3399c7001ce2c | colin.lebens@gmail.com | 2009-10-12 19:07:21 | 2009-10-12 19:07:21 | -6162846880.123770673809845 | 
++----+----------+------------------------------------------+------------------------+---------------------+---------------------+-----------------------------+
+1 row in set (0.00 sec)
+
+mysql> exit
+Bye
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00medit.html.erb[00m  [00mindex.html.erb[00m  [00mlogin.html.erb[00m  [00mnew.html.erb[00m  [00mshow_gift.html.erb[00m  [00mshow_gifts.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ..[K[K[K[K[Kcd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd layouts
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ ls
+[00m[00mgiftlists.html.erb[00m  [00mgifts.html.erb[00m  [00musers.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ npp users*
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00medit.html.erb[00m  [00mindex.html.erb[00m  [00mlogin.html.erb[00m  [00mnew.html.erb[00m  [00mshow_gift.html.erb[00m  [00mshow_gifts.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp login*[K[K[K[K[K[K[K[K[K[Kcd [K[K[Kcd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd lay*
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ ls
+[00m[00mgiftlists.html.erb[00m  [00mgifts.html.erb[00m  [00musers.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ npp users*
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ cd ..[K.
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00medit.html.erb[00m  [00mindex.html.erb[00m  [00mlogin.html.erb[00m  [00mnew.html.erb[00m  [00mshow_gift.html.erb[00m  [00mshow_gifts.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp login.[K[K[K[K[K[Kshow*[Kgif[K[K[K_gifts*
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd c[K..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd cont*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mgiftlists_controller.rb[00m  [00mgifts_controller.rb[00m  [00musers_controller.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ no[Kpp userss*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ npp userss*[1P*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd models
+]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ ls
+[00m[00mgiftlist.rb[00m  [00mgift.rb[00m  [00muser.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ npp user.rg
+]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ npp user.rg[Kb
+]0;clebens@localhost: ~/www/gifter/app/modelsclebens@localhost:~/www/gifter/app/models$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd ..npp user.rbg[K[K[K[K[K[K[K[K[K[K[Krake db:sessions:clear
+(in /home/clebens/www/gifter)
+rake aborted!
+Mysql::Error: Table 'gifter_development.sessions' doesn't exist: DELETE FROM sessions
+
+(See full trace by running task with --trace)
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd app/;[Kviews
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00medit.html.erb[00m  [00mindex.html.erb[00m  [00mlogin.html.erb[00m  [00mnew.html.erb[00m  [00mshow_gift.html.erb[00m  [00mshow_gifts.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp home.html.re[K[Kerb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ c[Kl[Kcd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd lay*
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ l
+sbash: l: command not found
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ sls[K[K[Kls
+[00m[00mgiftlists.html.erb[00m  [00mgifts.html.erb[00m  [00musers.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ npp g[Kusers.uthml[K[K[K[K[Khtml.erb
+]0;clebens@localhost: ~/www/gifter/app/views/layoutsclebens@localhost:~/www/gifter/app/views/layouts$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00medit.html.erb[00m  [00mhome.html.erb[00m  [00mindex.html.erb[00m  [00mlogin.html.erb[00m  [00mnew.html.erb[00m  [00mshow_gift.html.erb[00m  [00mshow_gifts.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp new.html[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd gifts
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ ls
+[00m[00medit.html.erb[00m  [00mindex.html.erb[00m  [00mnew.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ npp new.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ ls
+[00m[00medit.html.erb[00m  [00mindex.html.erb[00m  [00mnew.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter/app/views/gifts$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00medit.html.erb[00m  [00mhome.html.erb[00m  [00mindex.html.erb[00m  [00mlogin.html.erb[00m  [00mnew.html.erb[00m  [00mshow_gift.html.erb[00m  [00mshow_gifts.html.erb[00m  [00mshow.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp us[K[Kusr[Ker_gift_entry.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd cont*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mgiftlists_controller.rb[00m  [00mgifts_controller.rb[00m  [00musers_controller.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ c[Knpp gifts*cont*
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ps -x
+Warning: bad ps syntax, perhaps a bogus '-'? See http://procps.sf.net/faq.html
+  PID TTY      STAT   TIME COMMAND
+ 3618 ?        S      0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+ 3631 ?        Ssl    0:02 x-session-manager
+ 3686 ?        Ss     0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/pulse-session /usr/bin/seahorse-agent --execute x-session
+ 3689 ?        S      0:00 /usr/bin/dbus-launch --exit-with-session /usr/bin/pulse-session /usr/bin/seahorse-agent --execute x-session-manager
+ 3690 ?        Ss     0:39 //bin/dbus-daemon --fork --print-pid 6 --print-address 9 --session
+ 3695 ?        Ssl  124:13 /usr/bin/pulseaudio --start
+ 3696 ?        S      0:00 /usr/lib/pulseaudio/pulse/gconf-helper
+ 3698 ?        S      0:24 /usr/lib/libgconf2-4/gconfd-2
+ 3709 ?        Ss     0:00 /usr/bin/seahorse-agent --execute x-session-manager
+ 3717 ?        S      0:00 /usr/lib/gvfs/gvfsd
+ 3726 ?        Ssl    0:05 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+ 3729 ?        Ssl    0:00 /usr/lib/gvfs//gvfs-fuse-daemon /home/clebens/.gvfs
+ 3738 ?        S      0:48 metacity
+ 3739 ?        Sl     2:10 gnome-panel
+ 3740 ?        S      0:05 nautilus
+ 3742 ?        Ssl    0:00 /usr/lib/bonobo-activation/bonobo-activation-server --ac-activate --ior-output-fd=19
+ 3745 ?        S      1:14 pidgin
+ 3748 ?        S      0:07 update-notifier --startup-delay=60
+ 3749 ?        S      0:01 bluetooth-applet
+ 3750 ?        S      0:36 python /usr/share/system-config-printer/applet.py
+ 3752 ?        Sl     0:00 /usr/lib/evolution/2.26/evolution-alarm-notify
+ 3759 ?        S      0:43 nm-applet --sm-disable
+ 3766 ?        S      0:07 /usr/lib/notify-osd/notify-osd
+ 3769 ?        S      0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec_spaw/0
+ 3770 ?        Ssl    0:18 gnome-power-manager
+ 3777 ?        S      0:00 /usr/lib/gnome-applets/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=18
+ 3779 ?        Sl     0:00 /usr/lib/gvfs/gvfs-hal-volume-monitor
+ 3786 ?        S      0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 3863 ?        S      0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.5 /org/gtk/gvfs/exec_spaw/1
+ 3867 ?        S      0:24 /usr/lib/fast-user-switch-applet/fast-user-switch-applet --oaf-activate-iid=OAFIID:GNOME_FastUserSwitchApplet_Factory --oaf-io
+ 3870 ?        Sl     0:00 /usr/lib/gnome-applets/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=26
+ 3873 ?        S      0:10 /usr/lib/indicator-applet/indicator-applet --oaf-activate-iid=OAFIID:GNOME_IndicatorApplet_Factory --oaf-ior-fd=32
+ 3961 ?        Rl     0:16 gnome-terminal
+ 3962 ?        S      0:00 gnome-pty-helper
+ 3963 pts/0    Ss     0:00 bash
+ 3986 ?        Ss     1:27 gnome-screensaver
+ 3995 ?        Sl     0:00 /usr/lib/evolution/2.26/evolution-exchange-storage --oaf-activate-iid=OAFIID:GNOME_Evolution_Exchange_Connector_CalFactory:1.2
+ 3999 ?        Sl     0:00 /usr/lib/evolution/evolution-data-server-2.26 --oaf-activate-iid=OAFIID:GNOME_Evolution_DataServer_CalFactory:1.2 --oaf-ior-fd
+ 4023 pts/0    Sl+   29:03 ruby script/server
+ 4038 ?        Sl   539:02 /usr/lib/firefox-3.0.14/firefox
+ 4184 pts/1    Ss+    0:00 bash
+ 4351 pts/2    Ss     0:00 bash
+ 7381 pts/2    S+     0:00 script db:migrate
+ 7382 pts/2    R+     0:00 script db:migrate
+ 7383 pts/3    Ss     0:01 bash -i
+ 7660 ?        S      2:12 /usr/games/sol
+ 8930 pts/3    R+     0:00 ps -x
+ 9501 ?        S      0:00 /bin/sh /usr/bin/thunderbird
+ 9513 ?        S      0:00 /bin/sh /usr/lib/thunderbird/run-mozilla.sh /usr/lib/thunderbird/thunderbird-bin
+ 9517 ?        Sl    37:12 /usr/lib/thunderbird/thunderbird-bin
+ 9979 pts/3    S      1:35 gedit 20091012185240_add_salt_to_user.rb
+15161 ?        Sl     1:08 /usr/lib/openoffice/program/soffice.bin /tmp/CCD Creations, LLC.doc -splash-pipe=5
+19019 ?        Sl     9:44 rhythmbox
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ps -x grep fire[Kefix[K[Kox
+ERROR: Must set personality to get -x option.
+********* simple selection *********  ********* selection by list *********
+-A all processes                      -C by command name
+-N negate selection                   -G by real group ID (supports names)
+-a all w/ tty except session leaders  -U by real user ID (supports names)
+-d all except session leaders         -g by session OR by effective group name
+-e all processes                      -p by process ID
+T  all processes on this terminal     -s processes in the sessions given
+a  all w/ tty, including other users  -t by tty
+g  OBSOLETE -- DO NOT USE             -u by effective user ID (supports names)
+r  only running processes             U  processes for specified users
+x  processes w/o controlling ttys     t  by tty
+*********** output format **********  *********** long options ***********
+-o,o user-defined  -f full            --Group --User --pid --cols --ppid
+-j,j job control   s  signal          --group --user --sid --rows --info
+-O,O preloaded -o  v  virtual memory  --cumulative --format --deselect
+-l,l long          u  user-oriented   --sort --tty --forest --version
+-F   extra full    X  registers       --heading --no-heading --context
+                    ********* misc options *********
+-V,V  show version      L  list format codes  f  ASCII art forest
+-m,m,-L,-T,H  threads   S  children in sum    -y change -l format
+-M,Z  security data     c  true command name  -c scheduling class
+-w,w  wide output       n  numeric WCHAN,UID  -H process hierarchy
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ ps -x grep firefox[1@|[1@ 
+Warning: bad ps syntax, perhaps a bogus '-'? See http://procps.sf.net/faq.html
+ 4038 ?        Sl   539:02 /usr/lib/firefox-3.0.14/firefox
+ 8939 pts/3    S+     0:00 grep firefox
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ kill -8 4038
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ kill -8 4038[1P 40389 4038
+bash: kill: (4038) - No such process
+]0;clebens@localhost: ~/www/gifter/app/controllersclebens@localhost:~/www/gifter/app/controllers$ cd ..[K[K[K[K[Kcd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ ruby generate[K[K[K[K[K[K[K[K[K[K[K[K[Kscript/generate scaffold measurements size[K[K[K[Ktshirt_size:string waist:integer shoe_size:integer [C[C[1@u[1@s[1@e[1@r[1@_[1@i[1@d[1@:[1@i[1@n[C[1@t[1@e[1@g[1@e[1@r[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chat_size:integer  dress_shirt_size:string wa[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cishoe_size:integer hat_size:integer[1@ [A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnshoe_size:integer hat_size:intege[1@r[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cshoe_size:integer hat_size:integ[1@e[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctshoe_size:integer hat_size:inte[1@g[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cshoe_size:integer hat_size:integ[1P[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceshoe_size:integer hat_size:inte[1@g[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cashoe_size:integer hat_size:int[1@e[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmshoe_size:integer hat_size:in[1@t[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:shoe_size:integer hat_size:i[1@n[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cishoe_size:integer hat_size:[1@i[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnshoe_size:integer hat_size[1@:[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctshoe_size:integer hat_siz[1@e[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceshoe_size:integer hat_si[1@z[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgshoe_size:integer hat_s[1@i[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceshoe_size:integer hat_[1@s[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crshoe_size:integer hat[1@_[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C shoe_size:integer ha[1@t[A]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbust_size:integer[K[K[K[K[K[K[Kstring dress_size:intetge[K[Kg[K[K[K[K[K[Kinteger hip_size:s[Kinteger
+     warning  Plural version of the model detected, using singularized version.  Override with --force-plural.
+      exists  app/models/
+      exists  app/controllers/
+      exists  app/helpers/
+      create  app/views/measurements
+      exists  app/views/layouts/
+      exists  test/functional/
+      exists  test/unit/
+      exists  test/unit/helpers/
+      exists  public/stylesheets/
+      create  app/views/measurements/index.html.erb
+      create  app/views/measurements/show.html.erb
+      create  app/views/measurements/new.html.erb
+      create  app/views/measurements/edit.html.erb
+      create  app/views/layouts/measurements.html.erb
+   identical  public/stylesheets/scaffold.css
+      create  app/controllers/measurements_controller.rb
+      create  test/functional/measurements_controller_test.rb
+      create  app/helpers/measurements_helper.rb
+      create  test/unit/helpers/measurements_helper_test.rb
+       route  map.resources :measurements
+  dependency  model
+      exists    app/models/
+      exists    test/unit/
+      exists    test/fixtures/
+      create    app/models/measurement.rb
+      create    test/unit/measurement_test.rb
+      create    test/fixtures/measurements.yml
+      exists    db/migrate
+      create    db/migrate/20091013205411_create_measurements.rb
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ ls
+[00m[01;34mapp[00m/  [01;34mconfig[00m/  [01;34mdb[00m/  [00mdb:migrate[00m  [01;34mdoc[00m/  [01;34mlib[00m/  [01;34mlog[00m/  [01;34mpublic[00m/  [00mRakefile[00m  [00mREADME[00m  [01;34mscript[00m/  [01;34mtest[00m/  [01;34mtmp[00m/  [01;34mvendor[00m/
+[m]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd [K[K[Kmysql -u clebens 0[K-o[Kp
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1552
+Server version: 5.0.75-0ubuntu10.2 (Ubuntu)
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> use gifter.[K_development
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show [K[K[K[Kelect * from measurements;
++----+---------+-------------+-------+--------+-----------+----------+------------------+-----------+------------+----------+---------------------+---------------------+
+| id | user_id | tshirt_size | waist | inseam | shoe_size | hat_size | dress_shirt_size | bust_size | dress_size | hip_size | created_at          | updated_at          |
++----+---------+-------------+-------+--------+-----------+----------+------------------+-----------+------------+----------+---------------------+---------------------+
+|  1 |       3 |             |  NULL |   NULL |      NULL |     NULL |                  |           |       NULL |     NULL | 2009-10-13 21:23:40 | 2009-10-13 21:23:40 | 
++----+---------+-------------+-------+--------+-----------+----------+------------------+-----------+------------+----------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> c[Kexit
+Bye
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd ../depot/public/style*
+]0;clebens@localhost: ~/www/depot/public/stylesheetsclebens@localhost:~/www/depot/public/stylesheets$ ls
+[00m[00mdepot.css[00m  [00mscaffold.css[00m
+[m]0;clebens@localhost: ~/www/depot/public/stylesheetsclebens@localhost:~/www/depot/public/stylesheets$ cd[K[Knpp depot.css
+]0;clebens@localhost: ~/www/depot/public/stylesheetsclebens@localhost:~/www/depot/public/stylesheets$ cd ..
+]0;clebens@localhost: ~/www/depot/publicclebens@localhost:~/www/depot/public$ cd ..
+]0;clebens@localhost: ~/www/depotclebens@localhost:~/www/depot$ cd ..
+]0;clebens@localhost: ~/wwwclebens@localhost:~/www$ cd syt[K[Ktyle[K[K[K[K[Kgifter
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ l
+bash: l: command not found
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ ls
+[00m[01;34mapp[00m/  [01;34mconfig[00m/  [01;34mdb[00m/  [00mdb:migrate[00m  [01;34mdoc[00m/  [01;34mlib[00m/  [01;34mlog[00m/  [01;34mpublic[00m/  [00mRakefile[00m  [00mREADME[00m  [01;34mscript[00m/  [01;34mtest[00m/  [01;34mtmp[00m/  [01;34mvendor[00m/
+[m]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd app
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ ls
+[00m[01;34mcontrollers[00m/  [01;34mhelpers[00m/  [01;34mmodels[00m/  [01;34mviews[00m/
+[m]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd views
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34mmeasurements[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ n[Kcd layout[K[K[K[K[K[Kusers
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mhome.html.erb[00m   [00mlogin.html.erb[00m  [00mshow_gift.html.erb[00m   [00mshow.html.erb[00m
+[00medit.html.erb[00m   [00mindex.html.erb[00m  [00mnew.html.erb[00m    [00mshow_gifts.html.erb[00m  [00muser_gift_entry.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp edit.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp search.html.erb
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ cd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd ..
+]0;clebens@localhost: ~/www/gifter/appclebens@localhost:~/www/gifter/app$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ co[K[Kcd config
+]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ ls
+[00m[00mboot.rb[00m  [00mdatabase.yml[00m  [00menvironment.rb[00m  [01;34menvironments[00m/  [01;34minitializers[00m/  [01;34mlocales[00m/  [00mroutes.rb[00m
+[m]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ npp routes*
+]0;clebens@localhost: ~/www/gifter/configclebens@localhost:~/www/gifter/config$ cd ..
+]0;clebens@localhost: ~/www/gifterclebens@localhost:~/www/gifter$ cd app/views
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34mmeasurements[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ np[K[Kcd users
+]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ ls
+[00m[00madmin.html.erb[00m  [00mhome.html.erb[00m   [00mlogin.html.erb[00m  [00msearch.html.erb[00m        [00mshow_gift.html.erb[00m   [00mshow.html.erb[00m
+[00medit.html.erb[00m   [00mindex.html.erb[00m  [00mnew.html.erb[00m    [00msearch_users.html.erb[00m  [00mshow_gifts.html.erb[00m  [00muser_gift_entry.html.erb[00m
+[m]0;clebens@localhost: ~/www/gifter/app/views/usersclebens@localhost:~/www/gifter/app/views/users$ npp [K[K[K[Kcd ..
+]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ ls
+[00m[01;34mgiftlists[00m/  [01;34mgifts[00m/  [01;34mlayouts[00m/  [01;34mmeasurements[00m/  [01;34musers[00m/
+[m]0;clebens@localhost: ~/www/gifter/app/viewsclebens@localhost:~/www/gifter/app/views$ cd gifts
+]0;clebens@localhost: ~/www/gifter/app/views/giftsclebens@localhost:~/www/gifter

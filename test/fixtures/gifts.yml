@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  giftlist_id: 1
+  price: 9.99
+  url: MyString
+  description: MyText
+  num_purchased: 1
+  num_requested: 1
+
+two:
+  user_id: 1
+  giftlist_id: 1
+  price: 9.99
+  url: MyString
+  description: MyText
+  num_purchased: 1
+  num_requested: 1

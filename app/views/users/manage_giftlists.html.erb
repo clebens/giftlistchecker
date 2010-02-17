@@ -1,0 +1,39 @@
+<div id="product_list" class="product_list">
+
+<% for giftlist in @giftlists %>
+
+<table class="product-table">
+	<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+	<td class="product_column_left">
+	<product_name>
+	<a href="/<%= @user.username %>/<%= giftlist.giftlist_name %>"><%= giftlist.giftlist_name %></a>
+	<% if giftlist.hidden == 1 %> - hidden from public<% end %>
+	</product_name><br />
+	<product_listing>
+	</td>
+	<td class="product_column_right">
+			<% if session[:user] == @user.username %>
+				<%= link_to 'Edit', edit_giftlist_path(giftlist) %><br />
+				<% if giftlist.hidden == 1 %>
+					<%= link_to 'Unhide', :action => "giftlist_unhide", :giftlist => giftlist.id %><br />
+				<% else %>
+					<%= link_to 'Hide', :action => "giftlist_hide", :giftlist => giftlist.id %><br />			
+				<% end %>		  
+				<%= link_to 'Destroy', giftlist, :confirm => 'Are you sure?', :method => :delete %><br>
+			<% end %>
+	</td>	
+	</tr>
+
+<% end %>
+<tr><td colspan="3"><span id="add_giftlist_dialog"><%= link_to_remote "Add Giftlist",
+								:url => { :action => 'add_giftlist_dialog' },
+								:update => "add_giftlist_dialog" %>
+</span></td></tr>
+
+</table>
+
+<% if session[:user] == @user.username %>
+<% end %>
+
+</div>
+

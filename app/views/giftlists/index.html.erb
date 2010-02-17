@@ -1,0 +1,22 @@
+<h1>Listing giftlists</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Giftlist name</th>
+  </tr>
+
+<% @giftlists.each do |giftlist| %>
+  <tr>
+    <td><%=h giftlist.user_id %></td>
+    <td><%=h giftlist.giftlist_name %></td>
+    <td><%= link_to 'Show', giftlist %></td>
+    <td><%= link_to 'Edit', edit_giftlist_path(giftlist) %></td>
+    <td><%= link_to 'Destroy', giftlist, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New giftlist', new_giftlist_path %>

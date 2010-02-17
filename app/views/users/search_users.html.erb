@@ -1,0 +1,11 @@
+<div class="search_results">
+<% if @users %>
+<% for user in @users %>
+<search_result_heading>Users Found matching "<%= params[:search] -%>":</search_result_heading><br />
+
+<a href="/<%=h user.username %>/"><%=h user.username %></a>
+<% end %>
+<% else %>
+No users found for that query <%= params[:search] %> - <%= @farts %>
+<% end %>
+</div>

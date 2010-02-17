@@ -1,0 +1,24 @@
+<%= form_remote_tag :url => { :action => "add_new_gift" }, :update => "giftlist_" + @giftlist.id.to_s %>
+<input type="hidden" name="giftlist_id" value="<%= @giftlist.id %>">
+<input type="hidden" name="user_id" value="<%= @user.id %>">
+<table class="add_new_gift_dialog_table">
+	<tr>
+		<td>Name&nbsp;</td><td><input type="text" name="name"></td>
+	</tr>
+	<tr>
+		<td>Price&nbsp;</td><td><input type="text" name="price"></td>
+	</tr>
+	<tr>
+		<td>URL&nbsp;</td><td><input type="text" name="url"></td>
+	</tr>
+	<tr>
+		<td>Description&nbsp;</td><td><input type="text" name="description"></td>
+	</tr>
+	<tr>
+		<td>Num&nbsp;Requested&nbsp;</td><td><input type="text" name="num_requested"></td>
+	</tr>
+	<tr>
+		<td><input type="Submit" value="submit"></td><td></td>
+	</tr>
+</table>
+</form>

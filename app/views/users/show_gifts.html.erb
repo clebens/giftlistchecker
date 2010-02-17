@@ -1,0 +1,26 @@
+<div id="product_list" class="product_list">
+
+<user_giftlists_heading>
+	<%= @user.username %>'s Giftlists
+</user_giftlists_heading>
+<br /><br />
+<span id="add_giftlist_dialog"><%= link_to_remote "Create New Giftlist",
+								:url => { :action => 'add_giftlist_dialog' },
+								:update => "add_giftlist_dialog" %>
+</span>
+<span id="all_user_giftlists">
+<% for @giftlist in @giftlists %>
+	<% if @giftlist.hidden == 0 || @user.username == session[:user] %>
+
+		<%= render(:partial => 'show_giftlist', :object => @giftlist, :object => @user) %>
+	<% else %>
+		<giftlist_heading>
+			<%= @giftlist.giftlist_name %> - giftlist blocked from public<br />
+		</giftlist_heading>
+	<% end %>
+
+<% end %>
+</span>
+
+</div>
+

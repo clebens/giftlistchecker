@@ -1,0 +1,13 @@
+<p>
+  <b>User:</b>
+  <%=h @giftlist.user_id %>
+</p>
+
+<p>
+  <b>Giftlist name:</b>
+  <%=h @giftlist.giftlist_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_giftlist_path(@giftlist) %> |
+<%= link_to 'Back', giftlists_path %>

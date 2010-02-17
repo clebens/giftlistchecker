@@ -1,0 +1,39 @@
+<h1>New gift</h1>
+
+<% form_for(@gift) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :giftlist_id %><br />
+    <%= f.text_field :giftlist_id %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :num_purchased %><br />
+    <%= f.text_field :num_purchased %>
+  </p>
+  <p>
+    <%= f.label :num_requested %><br />
+    <%= f.text_field :num_requested %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', gifts_path %>
